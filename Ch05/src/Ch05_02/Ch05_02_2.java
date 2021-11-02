@@ -80,5 +80,47 @@ public class Ch05_02_2 {
 		}
 		
 		
+		int[] temp = { 89, 75, 60};
+		int[][] javaScores = { {75, 80}, {72,61, 15}, {5,7,9}};
+		
+		for (int x=0 ; x <javaScores.length; x++) {
+			// int[] java = javaScores[x];
+			for (int y=0; y<javaScores[x].length ; y++)
+			{
+				int ja = javaScores[x][y];
+				 System.out.println(ja);
+			}
+		}
+		
+		int[] oldIntArray = { 1, 2, 3};
+		int[] newIntArray = new int[5];
+		for(int i =0 ; i<oldIntArray.length; i++) {
+			newIntArray[i] = oldIntArray[i];
+		}
+		
+		for(int i = 0 ; i < newIntArray.length ; i++) {
+			System.out.println(newIntArray[i]);
+		}
+		
+		
+		//System.arraycopy() -> 배열 복사
+		
+		String[] oldStrArray = { "java","array","copy"};
+		String[] newStrArray = new String[5];
+		System.arraycopy(oldStrArray, 0, newStrArray, 0, oldStrArray.length);
+		
+		for(int i = 0 ; i < newStrArray.length ; i++) {
+			System.out.println(newStrArray[i]);		
+		}
+	
+		int sum3 = 0;
+		int[] scoresList = { 95, 71, 84, 93, 87 };
+		for(int score3 : scoresList) {
+			System.out.println(score3);
+			sum3 +=score3; 
+		}
+		System.out.println(" 총 합 : " + sum3);
+		double avg3 = (double) sum3 / scoresList.length;
+		System.out.println(" 평 균 : " + avg3);
 	}
 }
