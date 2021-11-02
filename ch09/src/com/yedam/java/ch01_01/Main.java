@@ -36,6 +36,19 @@ public class Main {
 		
 		a.method();
 	
+		
+		System.out.println();
+		
+		Outer out = new Outer();
+		Runnable runner = out.getRunnable(10);
+		runner.run();
+		
+		System.out.println();
+		
+		
+		Outter outter = new Outter();
+		Outter.Nested  nested = outter.new Nested();
+		nested.print();
 	}
 
 }
