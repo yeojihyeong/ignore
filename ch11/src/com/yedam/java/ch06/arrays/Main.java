@@ -64,8 +64,6 @@ public class Main {
 		 */
 		
 		int[] scores = {99, 97 , 98};
-		Arrays.sort(scores);	
-		System.out.println(Arrays.toString(scores));
+		Arrays.sort(scores);
 	}
-
 }
