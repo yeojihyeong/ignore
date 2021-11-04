@@ -65,5 +65,50 @@ public class Main {
 		
 		int[] scores = {99, 97 , 98};
 		Arrays.sort(scores);
+		for(int score : scores) {
+			System.out.println(score);
+		}
+		
+		String[] names = {"홍길동", "박수홍","이순신"};
+		Arrays.sort(names);
+		for(String name : names) {
+			System.out.println(name);
+		}
+		
+		System.out.println();
+/*
+		Member m1 = new Member("홍길동");
+		Member m2 = new Member("박동수");
+		Member m3 = new Member("김미수");
+						
+		Member[] members = {m1,m2,m3};
+		Arrays.sort(members);
+		for(Member member : members) {
+			System.out.println(members);
+		}
+	*/	
+		System.out.println();
+		
+		// 배열 항목 검색 : 배열 항목에서 특정값이 위치한 인덱스를 얻는 것.
+		// Arrays.sort() 정렬 후 Arrays.binarySearch() 항목 찾음
+		int[] scores1 = {99, 97 , 98};
+		String[] names1 = {"홍길동", "박수홍","이순신"};
+		Member m4 = new Member("홍길동");
+		Member m5 = new Member("박동수");
+		Member m6 = new Member("김미수");
+		
+		Arrays.sort(scores1);
+		int index = Arrays.binarySearch(scores1, 99);
+		System.out.println(index);
+		
+		Arrays.sort(names1);
+		index = Arrays.binarySearch(names1, "이순신");
+		System.out.println(index);
+		
+		Member[] memberList = {m4,m5,m6};
+		Arrays.sort(memberList);
+		index = Arrays.binarySearch(memberList, m5);
+		System.out.println(index);
+		
 	}
 }

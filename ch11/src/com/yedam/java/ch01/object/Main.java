@@ -13,7 +13,7 @@ public class Main {
 		Member obj3 = new Member("red");
 		
 		
-		if(obj1.equals(obj2)) {
+		if(obj1.equals(obj2)) { //값 비교
 			System.out.println("obj1 과 obj2는 논리적으로 동등합네다");}
 		else {
 			System.out.println("obj1 과 obj2는 논리적으로 동등하지 않습니다");}

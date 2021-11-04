@@ -77,7 +77,7 @@ public class Main {
 		if(subject.indexOf("java")!= -1) {
 			System.out.println("java 와 관련된 책이군요");
 		} else {
-			System.out.println("java 와 관련없는 책이군요.");
+			System.out.println("java 와 관련없는 책이이군요.");
 		}
 		System.out.println();
 		//length();  배열.length처럼 길이를 가져오는 메소드

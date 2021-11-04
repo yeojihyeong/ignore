@@ -31,7 +31,7 @@ public interface Payment {
 	
 	//카드정보 및 적립포인트를 출력하는 메소드
 
-
+//
 	//출력정보 : 카드명, 적용등급, 할인율, 포인트적립율, 적립포인트
 	public void showCardInfo();
 }
